@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pagina de formularios">
+        <title>Pagina de formularios</title>
+    </head>
+    <body>
+        <h1>Validación</h1>
+        <form>
+            <input type="text" required minlength="5"
+            maxlength="15" pattern="[A-Za-z ]+"/>
+            <input type="number" required min="5"
+            max="15"/>
+            <input type="submit"/>
+        </form>
+
+        <h1>Formularios</h1>
+        <form method="¨POST" action="enlaces.html" enctype="text/plain">
+            <fieldset>
+                <legend>Información personal</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
+                </div>
+                <div>
+                    <label for="descripcion">Descripcion:</label>
+                    <textarea id="descripcion"></textarea>
+                </div>
+                <div>
+                    <label for="email">Correo</label>
+                    <input id="email "type="email"/>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input id="password"type="password"/>
+                </div>
+                <div>
+                    Radio:
+                    <input type="radio" name="genero" id="hombre" value="hombre"/>
+                    <label for="hombre">Hombre</label>
+
+                    <input type="radio" name="genero" id="mujer" value="mujer"/>
+                    <label for="mujer">Mujer</label>
+                </div>
+                <div>
+                    Select:
+                    <select>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    Checkbox:
+                    <label>
+                        <input type="checkbox" />Mayor de edad
+                    </label>
+                    <label>
+                        <input type="checkbox" />Menor de edad
+                    </label>
+                </div>
+                <div>
+                    Color:
+                    <input type="color"/>
+                </div>
+                <div>
+                    Fecha:
+                    <input type="date"/>
+                </div>
+                <div>
+                    Ficheros:
+                    <input type="file"/>
+                </div>
+                <div>
+                    Imagen:
+                    <input type="image" src="imagenes/ferrari.jpg" width="300px" />
+                </div>
+                <div>
+                    Oculto:
+                    <input type="hidden" name="oculto" value="Hola mundo"/>
+                </div>
+                <div>
+                    Número:
+                    <input type="number"/>
+                </div>
+                <div>
+                    Número:
+                    <input type="range" name="rango"/>
+                </div>
+                <div>
+                    Busqueda:
+                    <input type="search" name="buscar" />
+                    <button>Buscar</button>
+                </div>
+                <div>
+                    Telefono:
+                    <input type="tel" name="telefono" />
+                </div>
+                <div>
+                    Hora:
+                    <input type="time"/>
+                </div>
+                <div>
+                    Sitio web:
+                    <input type="url"/>
+                </div>
+                <div>
+                    Barra progreso:
+                    <progress max="100" value="60"></progress>
+                </div>
+                <div>
+                    Meter:
+                    <meter max="100" value="60"></meter>
+                </div>
+                <div>
+                    Lista de datos:
+                    <input list="frutas" name="frutas"/>
+                    <datalist id="frutas">
+                        <option value="naranja"></option>
+                        <option value="manzana"></option>
+                        <option value="cereza"></option>
+                        <option value="pera"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpiar formulario"/>
+        </form>
+
+        
+    </body>
+
+</html>
